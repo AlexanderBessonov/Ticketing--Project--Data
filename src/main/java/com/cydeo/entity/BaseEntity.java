@@ -17,10 +17,13 @@ public class BaseEntity {
     private Long id;
 
     private Boolean isDeleted = false;
-
+    @Column(nullable = false,updatable = false)
     private LocalDateTime insertDateTime;
+    @Column(nullable = false,updatable = false)
     private Long insertUserId;
+    @Column(nullable = false)
     private LocalDateTime lastUpdateDateTime;
+    @Column(nullable = false)
     private Long lastUpdateUserId;
 
     @PrePersist
