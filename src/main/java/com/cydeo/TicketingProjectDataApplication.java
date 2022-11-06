@@ -15,7 +15,7 @@ public class TicketingProjectDataApplication {
     //Create a class annotated with @Configuration
     //Write a method which return the object that you trying to add  in the container
 
-    @Bean
+    @Bean//It is not our class
    public ModelMapper  mapper(){
 
         return new ModelMapper();
