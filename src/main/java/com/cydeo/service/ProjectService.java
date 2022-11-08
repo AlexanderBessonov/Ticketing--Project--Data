@@ -20,4 +20,8 @@ public interface ProjectService {
     void complete(String projectCode);
 
     List<ProjectDTO> listAllProjectsDetails();
+
+   List<ProjectDTO> listAllNonCompletedByAssignedManager(UserDTO assignedManager);
+
+
 }
